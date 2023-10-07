@@ -180,8 +180,22 @@ https://github.com/seperdan/SCCM/assets/54723844/4d1aaa44-7b5d-4730-a241-1ad6cfd
 
 <b>First order of business is to join your new SCCM workstation to your previously created domain:</b>
 
-
 https://github.com/seperdan/SCCM/assets/54723844/4aa8dda3-aab4-4c08-b6d5-d9ac4cdf0e0a
+
+<b>Now, we must create another (virtual) hard drive to accomodate _______________________________________________________________. We do this by using the settings of the VMware workstation and then setting it up as "Stuff (E:)" as shown in this clip:</b>
+
+https://github.com/seperdan/SCCM/assets/54723844/f3fb96c8-5b27-4131-be94-b3151b862a15
+
+![25](https://github.com/seperdan/SCCM/assets/54723844/e7ad3519-d149-4282-b4da-62a23511fad1)
+
+<b>Now we must install SQL as SCCM is a SQL back-end. Use the SQL Server 2016 download link under "Environments and Tools Used" section near the top of to accomplish this on your own computer (NOT the virtual 
+workstations you've set up). Next, we must incorporate the SQL from our computer into the virtual environment. And we can do this via the following method:</b>
+
+
+
+<b>Now,
+
+
 
 
 
