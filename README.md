@@ -22,7 +22,7 @@
 <br>SQL Server 2016: https://www.microsoft.com/en-us/evalcenter/download-sql-server-2016</br>
 <br>Windows ADK: https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install</br>
 
-<h2 align="center">Virtual Machine Setup Walkthrough</h2>
+<h2>Virtual Machine Setup Walkthrough</h2>
 
 <b>For this setup, we will be using this network diagram:</b>
 
@@ -174,4 +174,14 @@ https://github.com/seperdan/SCCM/assets/54723844/4d1aaa44-7b5d-4730-a241-1ad6cfd
 
 <h1>SCCM Machine Setup Walkthrough:</h1>
 
-<b>
+<b>To start, create a new VN on your VMware Workstation which will be dedicated to SCCM. Make sure that your NAT is assigned to VMnet19!</b>
+
+![24](https://github.com/seperdan/SCCM/assets/54723844/73fd9790-a645-4e6f-b8e0-bb373a21d06d)
+
+<b>First order of business is to join your new SCCM workstation to your previously created domain:</b>
+
+
+https://github.com/seperdan/SCCM/assets/54723844/4aa8dda3-aab4-4c08-b6d5-d9ac4cdf0e0a
+
+
+
