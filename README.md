@@ -16,7 +16,7 @@
 
 <h2>Environments and Tools Used</h2>
 <br>VMware Work Station Pro (Free Trial Version): https://www.vmware.com/ca/products/workstation-pro.html</br>
-<br>Microsoft Server 2019: https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019</br>
+<br>Microsoft Server 2016: https://www.microsoft.com/en-us/evalcenter/download-windows-server-2016</br>
 <br>Microsoft Windows 10 ISO: https://www.microsoft.com/en-us/software-download/windows10</br>
 <br>Microsoft Endpoint Configuration Manager: https://archive.org/details/mu_microsoft_endpoint_configuration_manager_current_branch_version_2103_x86_x64_dvd_77e1425b</br>
 <br>SQL Server 2016: https://www.microsoft.com/en-us/evalcenter/download-sql-server-2016</b>
@@ -42,15 +42,32 @@
 
 ![4](https://github.com/seperdan/SCCM/assets/54723844/ad0603a1-6b41-4dbb-bfb0-fdcecd198c28)
 
-<b>When prompted with the installation configurations, ensure to select the Server 2019 ISO AND select "Windows Server Standard Core" under version to install like so:</b>
+<b>When prompted with the installation configurations, ensure to select the Server 2016 ISO AND select "Windows Server 2016 Standard" under version to install like so:</b>
 
 ![5](https://github.com/seperdan/SCCM/assets/54723844/6a0d0c52-bbff-40d7-9590-f6c5b6a59e80)
-![6](https://github.com/seperdan/SCCM/assets/54723844/c028abee-bee6-4731-8636-54136263303d)
+![6](https://github.com/seperdan/SCCM/assets/54723844/41ddc7ef-dd56-4f67-a4d0-cb29709656c8)
 
 <b>Once you get to this prompt, click on "Customize Hardware"<b>
-![7](https://github.com/seperdan/SCCM/assets/54723844/54008368-e8f3-4020-8026-edf9cabfeeab)
+![7](https://github.com/seperdan/SCCM/assets/54723844/a91f3983-a1ab-4d03-81e3-f720d951315e)
 
-<b>and ensure that the Network Adaptor is correctly configured to bridged VMnet19 that we just setup! </b>
+<b>and ensure that the Network Adaptor is correctly configured to bridged VMnet19 that we just setup!</b>
+
+![8](https://github.com/seperdan/SCCM/assets/54723844/90a7a484-70f0-4891-b569-292e134e6df7)
+
+<b>Once that's done, OK everything and your first virtual environment should boot up after a brief installation!</b>
+![9](https://github.com/seperdan/SCCM/assets/54723844/27299c31-2cc8-4ff4-a554-6ef77a49d87c)
+
+<b>Now, we will need to set a static IP for out network. Nagivate to network connections:</b>
+![10](https://github.com/seperdan/SCCM/assets/54723844/f8e542cc-0831-422d-8e34-edaf24f38c1e)
+
+<b>Right click on your network, go on properties, and select the "Inter Protocol Version 4 (TCP/IPv4)" option</b>
+![11](https://github.com/seperdan/SCCM/assets/54723844/abe8d61d-3f08-4e24-84fc-2c00a077c779)
+
+<b>Set the following IP address and DNS Mask address per our network diagram above and select OK:</b>
+![12](https://github.com/seperdan/SCCM/assets/54723844/1be3929b-da02-4ac4-b142-b55966b3f16f)
+
+
+
 
 
 
