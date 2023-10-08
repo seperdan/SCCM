@@ -219,3 +219,12 @@ https://github.com/seperdan/SCCM/assets/54723844/cd43c376-87b5-457b-bf6b-fe80f75
 
 <b>Next, we'll need to extend the schema by setting up the Active Directory in a way that SCCM will publish your information to AD. This allows for machines to check into AD and be able to know where the system's management is located.(17:50)</b>
 
+<b>To do this, go to your SMSSETUP/bin/x64 and grab the "extadsch.exe" file and copy it to the base of your AD folder. Doing this, allows our first Server workstation that we created to be able to access this .exe file.</b>
+
+![31](https://github.com/seperdan/SCCM/assets/54723844/dab67f48-9b54-4e22-989b-e194b9687a4e)
+
+And the root of our AD where we'll paste the extadsch.exe file can be found via typing "\\DomainController\c$" in the windows folder address directory like so:
+
+![32](https://github.com/seperdan/SCCM/assets/54723844/e09cf251-3938-41d6-9cf5-55f77eb38544)
+
+<b>Now go back to your first Server workstation (in my case SeperServerLab) and run the extadsch.exe file to extend the AD Schema!</b>
