@@ -245,4 +245,22 @@ And the root of our AD where we'll paste the extadsch.exe file can be found via 
 
 ![38](https://github.com/seperdan/SCCM/assets/54723844/39192123-db72-493c-9614-b6b5c3fb81ac)
 
-22.57
+<b>Now, we head to Server Manager again and add the role "Windows Server Update Services" and the features "Remote Differential Compression", "Background Intelligent Transfer Service (BITS), ".NET Framework 3.5 Features"</b>
+
+![39](https://github.com/seperdan/SCCM/assets/54723844/934f66c9-37fa-4426-9cff-0f2fc15a7c65)
+
+![40](https://github.com/seperdan/SCCM/assets/54723844/7b9e6298-46c3-447b-ba7f-c5935bbdaa34)
+
+<b>Next, follow these prompts to do our final configurations before installing the SCCM Server!</b>
+
+![41](https://github.com/seperdan/SCCM/assets/54723844/9f97f7ab-7f52-425f-8db8-b533c91bd7c3)
+
+![42](https://github.com/seperdan/SCCM/assets/54723844/f5390811-f525-4f3f-a861-43c9bea69a5e)
+
+![43](https://github.com/seperdan/SCCM/assets/54723844/4fbb85d5-3d2f-4eeb-821f-6b8dfe1a3c1e)
+
+<b>Now we can finally initiate the SCCM Server installation! Use the download link above!"</b>
+
+<b>Final result of compelted SCCM installation to manage and connect to our AD:</b>
+
+![44](https://github.com/seperdan/SCCM/assets/54723844/e540ac3b-4b87-4799-9508-11146a9825d4)
