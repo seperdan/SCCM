@@ -244,3 +244,5 @@ And the root of our AD where we'll paste the extadsch.exe file can be found via 
 <b>Next, we grant permission to our SCCM:</b>
 
 ![38](https://github.com/seperdan/SCCM/assets/54723844/39192123-db72-493c-9614-b6b5c3fb81ac)
+
+22.57
