@@ -217,7 +217,7 @@ https://github.com/seperdan/SCCM/assets/54723844/cd43c376-87b5-457b-bf6b-fe80f75
 
 ![30](https://github.com/seperdan/SCCM/assets/54723844/65864eb2-a131-49c0-baac-b8b9c3747f48)
 
-<b>Next, we'll need to extend the schema by setting up the Active Directory in a way that SCCM will publish your information to AD. This allows for machines to check into AD and be able to know where the system's management is located.(17:50)</b>
+<b>Next, we'll need to extend the schema by setting up the Active Directory in a way that SCCM will publish your information to AD. This allows for machines to check into AD and be able to know where the system's management is located.</b>
 
 <b>To do this, go to your SMSSETUP/bin/x64 and grab the "extadsch.exe" file and copy it to the base of your AD folder. Doing this, allows our first Server workstation that we created to be able to access this .exe file.</b>
 
@@ -228,3 +228,19 @@ And the root of our AD where we'll paste the extadsch.exe file can be found via 
 ![32](https://github.com/seperdan/SCCM/assets/54723844/e09cf251-3938-41d6-9cf5-55f77eb38544)
 
 <b>Now go back to your first Server workstation (in my case SeperServerLab) and run the extadsch.exe file to extend the AD Schema!</b>
+
+![33](https://github.com/seperdan/SCCM/assets/54723844/66c052f6-176b-4b29-85db-645a1713ab73)
+
+<b>You may notice that although we were successful in extending the AD Schema, we still need to configure rights in Active Directory. This can be done by the command "adsiedit.msc" Connect with the default naming context like seen in the image below:</b>
+
+![34](https://github.com/seperdan/SCCM/assets/54723844/58683526-b1c7-4040-b9f7-c8113b6ec83d)
+
+<b>This grants access to all the Containers (CN) that were created by default. Now, right click the systems container->new->object->container->click next->name it "System Management"->click next. Now we have our systems management container that we'll use to grant security to that SCCM can control and manage the whole container.
+
+![36](https://github.com/seperdan/SCCM/assets/54723844/9fa63c5c-cdf9-4d70-aaf5-1f96f712ac45)
+
+![37](https://github.com/seperdan/SCCM/assets/54723844/fb9cd747-7c0d-43b3-985a-ac353f1a2768)
+
+<b>Next, we grant permission to our SCCM:</b>
+
+![38](https://github.com/seperdan/SCCM/assets/54723844/39192123-db72-493c-9614-b6b5c3fb81ac)
