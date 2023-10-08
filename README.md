@@ -20,7 +20,7 @@
 <br>Microsoft Windows 10 ISO: https://www.microsoft.com/en-us/software-download/windows10</br>
 <br>Microsoft Endpoint Configuration Manager: https://archive.org/details/mu_microsoft_endpoint_configuration_manager_current_branch_version_2103_x86_x64_dvd_77e1425b</br>
 <br>SQL Server 2016: https://www.microsoft.com/en-us/evalcenter/download-sql-server-2016</br>
-<b>SQL Server Management Studio (SSMS): https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16</br>
+<br>SQL Server Management Studio (SSMS): https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16</br>
 <br>Windows ADK: https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install</br>
 
 <h2>Virtual Machine Setup Walkthrough</h2>
