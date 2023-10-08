@@ -1,4 +1,4 @@
-<h1>Basic Virtual Machine (VM), Active Directory (AD) and Microsoft Systen Center Configuration Manager (SCCM) Home Lab Set up</h1>
+![image](https://github.com/seperdan/SCCM/assets/54723844/d5db18bb-66c4-4fb8-8a25-d83ab76be855)![image](https://github.com/seperdan/SCCM/assets/54723844/6656d732-1ce4-45d4-a51a-f5aa590099ed)<h1>Basic Virtual Machine (VM), Active Directory (AD) and Microsoft Systen Center Configuration Manager (SCCM) Home Lab Set up</h1>
 
 <h1>Description:</h1>
 <b>Hi! In this Github, I will demonstrate how to set up your own virtual environment with Active Directory and Microsoft System Center Configuration Manager in a simulated Enterprise setting!</b>
@@ -20,6 +20,7 @@
 <br>Microsoft Windows 10 ISO: https://www.microsoft.com/en-us/software-download/windows10</br>
 <br>Microsoft Endpoint Configuration Manager: https://archive.org/details/mu_microsoft_endpoint_configuration_manager_current_branch_version_2103_x86_x64_dvd_77e1425b</br>
 <br>SQL Server 2016: https://www.microsoft.com/en-us/evalcenter/download-sql-server-2016</br>
+<b>SQL Server Management Studio (SSMS): https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16</b>
 <br>Windows ADK: https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install</br>
 
 <h2>Virtual Machine Setup Walkthrough</h2>
@@ -191,11 +192,30 @@ https://github.com/seperdan/SCCM/assets/54723844/f3fb96c8-5b27-4131-be94-b3151b8
 <b>Now we must install SQL as SCCM is a SQL back-end. Use the SQL Server 2016 download link under "Environments and Tools Used" section near the top of to accomplish this on your own computer (NOT the virtual 
 workstations you've set up). Next, we must incorporate the SQL from our computer into the virtual environment. And we can do this via the following method:</b>
 
+https://github.com/seperdan/SCCM/assets/54723844/afdfa6d8-4695-4c93-9c46-0ebc69e29fcb
 
+<b>Now, it's time to install the SQL Server:</b>
 
-<b>Now,
+https://github.com/seperdan/SCCM/assets/54723844/cd43c376-87b5-457b-bf6b-fe80f75cb343
 
+<b>*Note: ensure that you install in the E directory that you created and to turn on the "automatic" setting for SQL Server Agent!*</b>
 
+![26](https://github.com/seperdan/SCCM/assets/54723844/ad239b62-dc07-4860-bc57-e4822fad86c1)
 
+![27](https://github.com/seperdan/SCCM/assets/54723844/eacda0cb-3925-4b8f-85b7-82abfca27d31)
 
+<b>Although we have installed our SQL Server now, we still need to download the SQL Server Management Studio (SSMS) from: https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16</b>
+<b>This will grant us various ways of configuring, managing, and administering all components within our Microsoft SQL Server. Once downloaded and installed, you will have a bunch of SQL Server Tools options.</b>
+
+![28](https://github.com/seperdan/SCCM/assets/54723844/03b8213a-3829-4d5e-8af0-1ac8191751ae)
+
+<b>At this stage, we don't have all the pre-requisites for installing SCCM yet. One way to get around this is to run a batch (.bat) file to scan to see which pre-requisites are missing. I used "D:\SMSSETUP\BIN\x64\prereqchk.exe /local" like so:</b>
+
+![29](https://github.com/seperdan/SCCM/assets/54723844/e31823b7-0b17-417d-9cc3-202717f88746)
+
+<b>Also in the image above we can see that a lot of pre-requisites are missing. And most of these are found in the Windows ADK which we'll promptly download from the link found in "Environments and Tools Used" section. We install this with the following features enabled:</b>
+
+![30](https://github.com/seperdan/SCCM/assets/54723844/65864eb2-a131-49c0-baac-b8b9c3747f48)
+
+<b>Next, we'll need to extend the schema by setting up the Active Directory in a way that SCCM will publish your information to AD. This allows for machines to check into AD and be able to know where the system's management is located.(17:50)</b>
 
