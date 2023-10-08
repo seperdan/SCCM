@@ -1,4 +1,4 @@
-![image](https://github.com/seperdan/SCCM/assets/54723844/d5db18bb-66c4-4fb8-8a25-d83ab76be855)![image](https://github.com/seperdan/SCCM/assets/54723844/6656d732-1ce4-45d4-a51a-f5aa590099ed)<h1>Basic Virtual Machine (VM), Active Directory (AD) and Microsoft Systen Center Configuration Manager (SCCM) Home Lab Set up</h1>
+<h1>Basic Virtual Machine (VM), Active Directory (AD) and Microsoft Systen Center Configuration Manager (SCCM) Home Lab Set up</h1>
 
 <h1>Description:</h1>
 <b>Hi! In this Github, I will demonstrate how to set up your own virtual environment with Active Directory and Microsoft System Center Configuration Manager in a simulated Enterprise setting!</b>
