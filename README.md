@@ -207,7 +207,7 @@ https://github.com/seperdan/SCCM/assets/54723844/cd43c376-87b5-457b-bf6b-fe80f75
 <b>Although we have installed our SQL Server now, we still need to download the SQL Server Management Studio (SSMS) from: https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16</b>
 <b>This will grant us various ways of configuring, managing, and administering all components within our Microsoft SQL Server. Once downloaded and installed, you will have a bunch of SQL Server Tools options.</b>
 
-![28](https://github.com/seperdan/SCCM/assets/54723844/03b8213a-3829-4d5e-8af0-1ac8191751ae)
+![28](https://github.com/seperdan/SCCM/assets/54723844/f2725dfa-e7a9-4757-bede-5a791e5fd475)
 
 <b>At this stage, we don't have all the pre-requisites for installing SCCM yet. One way to get around this is to run a batch (.bat) file to scan to see which pre-requisites are missing. I used "D:\SMSSETUP\BIN\x64\prereqchk.exe /local" like so:</b>
 
