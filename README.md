@@ -1,7 +1,7 @@
 <h1>Basic Virtual Machine (VM), Active Directory (AD) and Microsoft Systen Center Configuration Manager (SCCM) Home Lab Set up</h1>
 
 <h1>Description:</h1>
-<b>Hi! In this Github, I will demonstrate how to set up your own virtual environment with Active Directory and Microsoft System Center Configuration Manager in a simulated Enterprise setting!</b>
+<b>Hi! In this Github, I will demonstrate how to set up your own virtual environment with Active Directory and Microsoft System Center Configuration Manager or SCCM in a simulated Enterprise setting! The purpose of SCCM is to manage windows device deployment and security across an enterprise so it's very crucial for an organization's success. Let's get to work!</b>
 
 <h2>Utilities & Services Used and Created</h2>
 <br>- Powershell</br> 
