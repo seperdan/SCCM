@@ -261,6 +261,6 @@ And the root of our AD where we'll paste the extadsch.exe file can be found via 
 
 <b>Now we can finally initiate the SCCM Server installation! Use the download link above!"</b>
 
-<b>Final result of compelted SCCM installation to manage and connect to our AD:</b>
+<b>Final result of completed SCCM installation to manage and connect to our AD:</b>
 
 ![44](https://github.com/seperdan/SCCM/assets/54723844/e540ac3b-4b87-4799-9508-11146a9825d4)
